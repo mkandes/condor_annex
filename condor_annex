@@ -471,7 +471,7 @@ if( defined( $annexSize ) ) {
 
 	# Wait for the ASG nodes to show up in the pool.
 	print( "Waiting for count of annex instances in pool to become $desiredAnnexSize..." );
-	waitForNodesInPool( $projectID, $desiredAnnexSize );
+	#waitForNodesInPool( $projectID, $desiredAnnexSize );
 	print( " done.\n" );
 }
 
