@@ -232,7 +232,7 @@
 		},
 		"TemplateURL" : {
 			"Type" : "String",
-			"Default" : "https://s3.amazonaws.com/condor-annex/launch-configuration-",
+			"Default" : "https://s3.amazonaws.com/condor-annex-at-ucsd/launch-configuration-",
 			"Description" : "The base URL of the launch configuration template."
 		}
 	},

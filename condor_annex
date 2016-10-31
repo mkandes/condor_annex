@@ -621,7 +621,7 @@ sub createStack {
 
 	my @command = (
 		'aws', '--region', $region, 'cloudformation', 'create-stack',
-		'--template-url', "https://s3.amazonaws.com/condor-annex-${region}/template-${VERSION}",
+		'--template-url', "https://s3.amazonaws.com/condor-annex-at-ucsd/template-${VERSION}",
 		'--stack-name', $stackName,
     	'--capabilities', 'CAPABILITY_IAM',
     	'--tags', "Key=ProjectID,Value=${projectID}",
