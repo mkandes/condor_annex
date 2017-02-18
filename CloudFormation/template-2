@@ -1117,7 +1117,7 @@
 				},
 				"Description" : "Removes stray subscriptions (a CloudFormation work-around) and deletes the S3 bucket.",
 				"Handler" : "cleanup.handler",
-				"Runtime" : "nodejs",
+				"Runtime" : "nodejs4.3",
 				"Role" : { "Fn::GetAtt" : [ "CleanUpFunctionRole", "Arn" ] },
 				"Timeout" : 30
 			}
@@ -1183,7 +1183,7 @@
 				},
 				"Description" : "Permits the given source to call the given function.  (A CloudFormation work-around.)",
 				"Handler" : "index.handler",
-				"Runtime" : "nodejs",
+				"Runtime" : "nodejs4.3",
 				"Role" : { "Fn::GetAtt" : [ "PlumbingFunctionRole", "Arn" ] },
 				"Timeout" : 30
 			}
@@ -1245,7 +1245,7 @@
 				},
 				"Description" : "Initializes the lease.",
 				"Handler" : "index.handler",
-				"Runtime" : "nodejs",
+				"Runtime" : "nodejs4.3",
 				"Role" : { "Fn::GetAtt" : [ "ActivateAlarmFunctionRole", "Arn" ] },
 				"Timeout" : 30
 			}
